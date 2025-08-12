@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+}
+
+.logo{
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: start;
+    text-decoration: none;
+
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    
+}
