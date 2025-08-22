@@ -1,14 +1,17 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import Header from './components/Header';
+import Hero from './components/Hero';
+import MiniContent from './content/MiniContent';
 import { BrowserRouter } from 'react-router-dom';
+import Listings from './content/Listings';
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <Header />
-      
+      <Hero />
+      <MiniContent />
+      <Listings />
     </BrowserRouter>
   );
 }
