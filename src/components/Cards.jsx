@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Cards = ({ image, alt }) => {
+const Cards = ({ image, alt, className='' }) => {
     return (
-        <div className='w-64 h-64 rounded-lg overflow-hidden shadow'>
+        <div className={`w-64 h-64 rounded-lg overflow-hidden shadow ${className}`}>
             <img
                 src={image}
                 alt={alt}

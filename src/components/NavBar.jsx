@@ -13,20 +13,20 @@ const NavBar = () => {
         className="
           fixed z-[100] bg-white border-b border-black
           flex items-center justify-between
-          w-[95vw] md:w-[98vw] mx-[15px] p-2.5
+          w-[100vw] md:w-[100vw] py-1 px-5
         "
       >
         {/* logo */}
         <div className="z-50 flex flex-row items-center bg-white w-40">
           {/* small screen brand */}
           <Link to="/">
-            <h1 className="block md:hidden font-brand italic font-extrabold text-3xl leading-none">
+            <h1 className="block md:hidden font-brand italic font-extrabold text-5xl leading-none">
               O.B
             </h1>
           </Link>
           {/* big screen brand */}
           <Link to="/">
-            <h1 className="hidden md:flex font-brand italic font-extrabold text-3xl leading-none">
+            <h1 className="hidden md:flex font-brand italic font-extrabold text-5xl leading-none">
               Our Blooms
             </h1>
           </Link>
@@ -59,13 +59,13 @@ const NavBar = () => {
 
         {/* desktop menu */}
         <ul className="hidden md:inline-flex flex-row items-center relative">
-          <li className="list-none p-2.5">
+          <li className="list-none p-2.5 hover:bg-red-100 transition-colors duration-300 rounded-md">
             <Link className="no-underline text-black p-2.5" to="/gallery">GALLERY</Link>
           </li>
-          <li className="list-none p-2.5">
+          <li className="list-none p-2.5 hover:bg-red-100 transition-colors duration-300 rounded-md">
             <Link className="no-underline text-black p-2.5" to="/about">ABOUT</Link>
           </li>
-          <li className="list-none p-2.5">
+          <li className="list-none p-2.5 hover:bg-red-100 transition-colors duration-300 rounded-md">
             <Link className="no-underline text-black p-2.5" to="/contact">CONTACT</Link>
           </li>
         </ul>
@@ -80,13 +80,13 @@ const NavBar = () => {
           ${isMenuOpen ? "top-[50px] opacity-100 visible" : "top-[-10px] opacity-0 invisible"}
         `}
       >
-        <li className="list-none p-2.5">
+        <li className="list-none p-2.5 hover:bg-red-100 transition-colors duration-300 rounded-md">
           <Link className="no-underline text-black p-2.5" to="/gallery" onClick={() => setIsMenuOpen(false)}>GALLERY</Link>
         </li>
-        <li className="list-none p-2.5">
+        <li className="list-none p-2.5 hover:bg-red-100 transition-colors duration-300 rounded-md">
           <Link className="no-underline text-black p-2.5" to="/about" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
         </li>
-        <li className="list-none p-2.5">
+        <li className="list-none p-2.5 hover:bg-red-100 transition-colors duration-300 rounded-md">
           <Link className="no-underline text-black p-2.5" to="/contact" onClick={() => setIsMenuOpen(false)}>CONTACT</Link>
         </li>
       </ul>

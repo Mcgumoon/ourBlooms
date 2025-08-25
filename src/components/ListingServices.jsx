@@ -1,4 +1,6 @@
-import flower from '../images/flower.jpg';
+import flowerarch from '../images/flowerarch.jpg';
+import flowerarrangements from '../images/flowerarrangements.jpg';
+import sunflowers from '../images/sunflowers.jpg';
 import Cards from './Cards';
 
 const ServiceCardsData = [
@@ -6,21 +8,21 @@ const ServiceCardsData = [
     id: 1,
     title: 'Floral Installations',
     description: 'Living art for Homes, businesses, and events.',
-    src: flower,
+    src: flowerarch,
     alt: 'Floral Installations',
   },
   {
     id: 2,
     title: 'Native Plant Arrangements',
     description: 'Whether it\'s a private retreat or a public space, we craft floral experiences that bloom beyond expectations.',
-    src: flower,
+    src: flowerarrangements,
     alt: 'Native Plant Arrangements',
   },
   {
     id: 3,
     title: 'Custom Floral Concepts',
     description: 'Your vision, our blooms. We build arrangements that are both personal and exquisitely simple. Whether it’s a private retreat or a public space, we craft floral experiences that bloom beyond expectations.',
-    src: flower,
+    src: sunflowers,
     alt: 'Custom Floral Concepts',
   }
 ];
@@ -32,7 +34,7 @@ const ListingServices = () => {
         <ul className='flex flex-col justify-center items-center gap-4'>
           {ServiceCardsData.map((service) => (
             <li className='border-b border-black w-full  place-items-center p-5'>
-              <h2 className='text-2xl text-center font-bold font-dancing p-4'>
+              <h2 className='text-2xl text-center font-extrabold font-dancing p-4'>
                 {service.id}
               </h2>
               <Cards image={service.src} alt={service.alt} />
@@ -40,7 +42,7 @@ const ListingServices = () => {
                 {service.title}
               </h3>
 
-              <h6 className='text-center  py-2 pb-12'>
+              <h6 className='text-center w-9/12 max-md:w-full py-2 pb-12'>
                 {service.description}
               </h6>
 
