@@ -13,9 +13,9 @@ const Listings = () => {
                 <Cards image={bloosoms} alt='Cherry Bloosoms' className='w-full h-[700px] rounded-3xl max-md:h-96' />
             </div>
 
-            <section className='w-full h-80 bg-white flex flex-col justify-center items-center'>
+            <section className='w-full h-96 bg-white flex flex-col justify-center items-center'>
                 <h4 className='uppercase font-semibold text-gray-600'>Work with us</h4>
-                <h2 className='font-dancing font-extrabold text-3xl text-center p-6'>Discover how we can add a touch of natural beauty <br /> to your next event</h2>
+                <h2 className='font-dancing font-extrabold text-4xl md:text-5xl text-center px-6 py-16'>Discover how we can add a touch of natural beauty <br /> to your next event</h2>
                 <button className='relative rounded-md bg-yellow-400 w-[100px] h-10 flex justify-center items-center mt-5 hover:bg-yellow-300 transition-colors duration-300'>
                     <Link to="/about">
                         <p className='no-underline text-black text-bold'>About Us</p>
