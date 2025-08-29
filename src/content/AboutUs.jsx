@@ -34,9 +34,9 @@ const AboutUs = () => {
         beauty to your next event.</p>
 
       <div className='self-center h-24'>
-        <button className='relative rounded-md bg-yellow-400 w-[200px] h-10 flex justify-center items-center self-center mt-5 hover:bg-yellow-300 transition-colors duration-300 uppercase'>
+        <button className='relative rounded-md bg-red-400 w-[200px] h-10 flex justify-center items-center self-center mt-5 hover:bg-red-300 transition-colors duration-300 uppercase'>
           <Link to="/contact">
-            <p className='no-underline text-black text-bold text-sm'>Book a consultation</p>
+            <p className='no-underline text-white font-bold text-sm'>Book a consultation</p>
           </Link>
         </button>
       </div>
